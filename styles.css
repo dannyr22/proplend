@@ -1,0 +1,139 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*general*/
+
+/*header*/
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 15vh;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.logo-container {
+  flex-basis: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 100%;
+}
+
+.navigation-menu {
+  flex-basis: 100%;
+}
+
+.navigation-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  align-items: center;
+}
+
+.navigation-menu ul li {
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0em 0.5em;
+  white-space: nowrap;
+}
+
+.navigation-menu ul li:hover {
+  border-bottom: 2px solid;
+}
+
+.navigation-menu ul li a {
+  text-decoration: none;
+  color: rgb(108, 108, 108);
+  font-weight: 500;
+}
+
+.search-container {
+  display: none;
+  flex-basis: 30%;
+  margin: 0;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.search-container form {
+  margin: 0;
+}
+
+.search-container input {
+  border: 1px solid #333;
+  background-color: #333;
+  border-radius: 20px;
+  height: 32%;
+  color: white;
+  outline: none;
+  padding: 16px;
+}
+
+.fa-search {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 24%;
+  transform: translate(-10%, -50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .search-container {
+    display: flex;
+  }
+  .logo-container {
+    flex-basis: 30%;
+    justify-content: flex-start;
+  }
+  header {
+    flex-direction: row;
+  }
+  .navigation-menu {
+    flex-basis: 60%;
+  }
+  .navigation-menu {
+    justify-content: flex-end;
+  }
+
+  .navigation-menu ul li {
+    margin: 0em 1em;
+  }
+}
+
+/*hero banner*/
+
+/*image text overlay repeatable*/
+
+.image-text-overlay {
+  max-height: 500px;
+}
+
+.image-text-overlay img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-text-conatiner {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -10%);
+}
