@@ -1,7 +1,7 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 /*general*/
@@ -123,17 +123,46 @@ header {
 
 .image-text-overlay {
   max-height: 500px;
+  width: 100%;
 }
 
 .image-text-overlay img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  max-height: 500px;
 }
 
-.hero-text-conatiner {
+.hero-text-container {
   position: absolute;
   top: 50%;
-  left: 10%;
-  transform: translate(-50%, -10%);
+  left: 0;
+  transform: translate(0, -50%);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 72px;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 700;
+  /* display: block; */
+  /* border: 2px solid red; */
+  color: orange;
+  z-index: 9999999;
+}
+
+.hero-sub-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #d3d3d3;
+}
+
+.hero-text-container button {
+  padding: 8px;
+  border-radius: 12px;
+  background: #ccc;
+  color: #444;
+  font-weight: 600;
 }
