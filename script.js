@@ -31,4 +31,11 @@ $(document).ready(function () {
     wrapAround: true,
     imagesLoaded: true,
   });
+
+  // open burger nav
+  var $mobileNav = $(".mobile-nav");
+  var $modalWindow = $(".modal-window");
+  $mobileNav.on("click", function () {
+    $modalWindow.addClass("modal-window-active");
+  });
 });

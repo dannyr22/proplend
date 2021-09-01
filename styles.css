@@ -28,6 +28,40 @@ header {
   justify-content: center;
   height: 100%;
   align-items: center;
+  position: relative;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 999999999999999999;
+}
+
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 99999999999;
+}
+
+.modal-window-active {
+  display: block;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  padding-top: 20vh;
+  background: #e2dbad;
 }
 
 .logo-container img {
@@ -35,6 +69,7 @@ header {
 }
 
 .navigation-menu {
+  display: none;
   flex-basis: 100%;
 }
 
@@ -110,6 +145,7 @@ header {
     flex-direction: row;
   }
   .navigation-menu {
+    display: flex;
     flex-basis: 60%;
   }
   .navigation-menu {
@@ -121,6 +157,9 @@ header {
   }
   header {
     margin: 0 0;
+  }
+  .mobile-nav {
+    display: none;
   }
 }
 
