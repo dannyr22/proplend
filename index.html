@@ -17,6 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <title>Hiking Gear LTD</title>
   </head>
   <body>
@@ -109,6 +114,33 @@
         <br />
         <button class="cta_btn">Show More</button>
         <br />
+      </div>
+      <!-- carousel section --------------------------------------- -->
+      <div class="carousel-container">
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img src="./assets/ashley.jpg" alt="people hiking" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./assets/hollyTwo.jpg" alt="people hiking" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./assets/fabrizio.jpg" alt="people hiking" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./assets/nathan.jpg" alt="people hiking" />
+          </div>
+          ...
+        </div>
+      </div>
+      <!-- testimonial ---------------------------------------------- -->
+      <div class="testimonial-container">
+        <img src="assets/quotation.svg" />
+        <p class="testimonial-text">
+          Hiking is the best activity a person can have, and the best practise a
+          thinker can do.
+        </p>
+        <p class="author-text">Lorem Ipsum</p>
       </div>
       <!-- image and text section --------------------------------- -->
       <div class="image-and-text-container">
@@ -251,7 +283,7 @@
             <img src="assets/call.svg" />
           </div>
         </div>
-        <div>
+        <div class="footer-section">
           <h3>About</h3>
           <ul class="about footer-section">
             <li>History</li>
@@ -261,7 +293,7 @@
             <li>Privacy Policy</li>
           </ul>
         </div>
-        <div>
+        <div class="footer-section">
           <h3>Services</h3>
           <ul class="Services footer-section">
             <li>How to Order</li>
@@ -271,7 +303,7 @@
             <li>Payment Method</li>
           </ul>
         </div>
-        <div>
+        <div class="footer-section">
           <h3>Other</h3>
           <ul class="other footer-section">
             <li>Contact Us</li>
@@ -287,6 +319,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
