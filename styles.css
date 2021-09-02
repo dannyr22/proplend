@@ -4,6 +4,10 @@
   font-family: "Lato", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   /* background: #f6f6f6; */
 }
@@ -29,39 +33,6 @@ header {
   height: 100%;
   align-items: center;
   position: relative;
-}
-
-.mobile-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  z-index: 999999999999999999;
-}
-
-.modal-window {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  display: none;
-  z-index: 99999999999;
-}
-
-.modal-window-active {
-  display: block;
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: 100%;
-  padding-top: 20vh;
-  background: #e2dbad;
 }
 
 .logo-container img {
@@ -163,6 +134,76 @@ header {
   }
 }
 
+/* mobile nav */
+
+.mobile-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 999999999999999999;
+}
+
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.2); */
+  transform: translateX(-100%);
+  z-index: 99999999999;
+  transition: all 0.2s ease-in;
+}
+
+.modal-window-active {
+  transform: translateX(0);
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  padding-top: 20vh;
+  background: #f8c488;
+}
+
+.mobile-menu ul li {
+  margin: 16px 0px;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 24px;
+  padding: 0px 16px;
+  font-weight: bold;
+}
+
+.close-menu {
+  display: none;
+  font-size: 32px;
+  padding-left: 24px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.burger-menu {
+  display: none;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.nav-icon-active {
+  display: block;
+}
+
 /*image text overlay repeatable*/
 
 .image-text-overlay {
@@ -186,7 +227,7 @@ header {
   width: 80%;
   display: flex;
   flex-direction: column;
-  padding: 0px 72px;
+  padding: 0px 8px;
 }
 
 .hero-title {
@@ -230,6 +271,7 @@ header {
   }
   .hero-text-container {
     width: 50%;
+    padding: 0 72px;
   }
   .hero-text-container p {
     font-size: 24px;

@@ -35,7 +35,12 @@ $(document).ready(function () {
   // open burger nav
   var $mobileNav = $(".mobile-nav");
   var $modalWindow = $(".modal-window");
+  var $burgerIcon = $(".burger-menu");
+  var $closeIcon = $(".close-menu");
+
   $mobileNav.on("click", function () {
-    $modalWindow.addClass("modal-window-active");
+    $burgerIcon.toggleClass("nav-icon-active");
+    $closeIcon.toggleClass("nav-icon-active");
+    $modalWindow.toggleClass("modal-window-active");
   });
 });
